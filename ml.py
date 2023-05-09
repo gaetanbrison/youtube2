@@ -201,7 +201,7 @@ if app_mode == 'Prediction 📈':
 
         # The st.write() function displays differnt metrics for the kNN model, including 
         st.write("1) The model explains", confusion_matrix(y_test, predictions),"% variance of the target feature")
-        st.write("2) Here is the classification report:", metrics.classification_report(y_test,predictions))
+        st.text("2) Here is the classification report:", metrics.classification_report(y_test,predictions))
         st.write("3) Accuracy", accuracy)
 
 
